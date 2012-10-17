@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>mod_articles_frontpage</name>
+	<author>Iskar Enev</author>
+	<creationDate>October 02, 2012</creationDate>
+	<copyright>Copyright (C) 2012 Iskar Enev. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail></authorEmail>
+	<authorUrl></authorUrl>
+	<version>1.0</version>
+	<description>MOD_ARTICLES_FRONTPAGE_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_articles_frontpage">mod_articles_frontpage.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>image.php</filename>
+		<filename>getimage.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_articles_frontpage.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_articles_frontpage.ini</language>
+		<language tag="en-GB">en-GB.mod_articles_frontpage.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="catid" type="category" extension="com_content" multiple="true" default="" size="10" label="JCATEGORY" description="MOD_ARTICLES_FRONTPAGE_CATEGORY_DESC" >
+					<option value="">JALL</option>
+				</field>
+				<field name="featured" type="radio" default="0" label="MOD_ARTICLES_FRONTPAGE_FEATURED" description="MOD_ARTICLES_FRONTPAGE_FEATURED_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="truncate" type="text" default="100" label="MOD_ARTICLES_FRONTPAGE_TRUNCATE" description="MOD_ARTICLES_FRONTPAGE_TRUNCATE_DESC" />
+				<field name="count" type="text" default="6" label="MOD_ARTICLES_FRONTPAGE_COUNT" description="MOD_ARTICLES_FRONTPAGE_COUNT" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field name="cachemode" type="hidden" default="itemid">
+					<option value="itemid"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
