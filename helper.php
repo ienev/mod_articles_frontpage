@@ -72,11 +72,11 @@ abstract class modArticlesFrontpageHelper {
 		return $text;
 	}
 
-	function image($name, $dims) {
+	public static function image($name, $dims) {
 		return JURI::root() . 'modules/mod_articles_frontpage/getimage.php?f=' . base64_encode($name . ':' . $dims);
 	}
 
-	function snippet($text, $length = 64, $tail = " [..]") {
+	public static function snippet($text, $length = 64, $tail = " [..]") {
 		$text = trim($text);
 		if (mb_strlen($text) > $length) {
 			if (mb_strlen($text) > ($length * 2)) {
