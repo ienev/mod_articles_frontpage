@@ -43,8 +43,8 @@ $contentConfig = JComponentHelper::getParams('com_content');
 			$h4style = '';
 			if ($item->params->get('show_author')) {
 				$author = $item->created_by_alias;
-				$h4style = 'style="margin: 2px 0;"';
 			}
+			if ($author) $h4style = 'style="margin: 2px 0;"';
 		?>
 		<div class="<?php echo $span; ?> item-article <?php if(!$rowend): ?>dotted<?php endif; ?>">
 			<h4 <?php echo $h4style; ?>><a href="<?php echo $item->link; ?>"><?php echo htmlspecialchars($item->title); ?></a></h4>
