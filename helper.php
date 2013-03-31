@@ -33,7 +33,7 @@ abstract class modArticlesFrontpageHelper {
 		$access = !(int)$contentConfig->get('show_noauth');
 
 		$nullDate = '0000-00-00 00:00:00';
-		$now = date('Y-m-d H:i:s');
+		$now = JHtml::_('date', 'now', 'Y-m-d H:i:s');
 
 		$where = 'a.state = 1 
 					AND ( a.publish_up = ' . $db->Quote($nullDate) . ' OR a.publish_up <= ' . $db->Quote($now) . ' )
