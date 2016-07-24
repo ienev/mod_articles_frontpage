@@ -18,7 +18,7 @@ $doc_root = str_replace(DIRECTORY_SEPARATOR . 'modules' . DIRECTORY_SEPARATOR . 
 $f = explode(':',base64_decode($_GET['f']));
 if (!is_array($f) || count($f) < 2) exit;
 list($name, $image_dims) = $f;
-// TODO - make these parameters
+// TODO - make these module parameters
 if (!in_array($image_dims, array('150x', '100x', '75x', '50px'))) exit;
 
 $file = '';
