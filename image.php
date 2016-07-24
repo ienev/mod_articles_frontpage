@@ -4,7 +4,7 @@
 * in the gpl-3.0.txt file which should be included in the distribution.
 * 
 * @version		1.0 2012-10-02 Iskar Enev
-* @copyright	2012 Iskar Enev
+* @copyright	2016 Iskar Enev
 * @license		GPLv3 Open Source
 * @since		File available since initial release
 */

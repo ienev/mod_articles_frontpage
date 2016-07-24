@@ -4,7 +4,7 @@
 * in the gpl-3.0.txt file which should be included in the distribution.
 * 
 * @version		1.0 2012-10-02 nuclear-head
-* @copyright	2012 nuclear-head
+* @copyright	2016 nuclear-head
 * @license		GPLv3 Open Source
 * @link			http://jvitals.com
 * @since		File available since initial release
